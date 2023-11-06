@@ -33,7 +33,6 @@ enum AppTheme{lightTheme,darkTheme}
       primaryColor: const Color.fromARGB(255, 9, 67, 54),
       brightness: Brightness.light,
       //colorScheme: const ColorScheme.light(),
-      //colorScheme.backgroundColor(Color.fromARGB(255, 183, 34, 34)),
       dividerColor: const Color(0xff757575),
       floatingActionButtonTheme: const FloatingActionButtonThemeData(
         backgroundColor: Colors.black,

@@ -16,7 +16,7 @@ class MyDrawer extends StatelessWidget {
           Container(
               width: double.infinity,
               padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-              color: Color.fromARGB(255, 163, 221, 216),
+              color: Color.fromARGB(255, 144, 209, 204),
               child: Text(
                 'Task Drawer',
                 style: Theme.of(context).textTheme.headlineSmall,
@@ -54,8 +54,8 @@ class MyDrawer extends StatelessWidget {
                   value: state.switchVal,
                   onChanged: (value) {
                     value
-                        ? context.read()<SwitchBloc>().add(SwitchOn())
-                        : context.read()<SwitchBloc>().add(SwitchOff());
+                        ? context.read<SwitchBloc>().add(SwitchOn())
+                        : context.read<SwitchBloc>().add(SwitchOff());
                   });
             },
           ),

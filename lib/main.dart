@@ -50,8 +50,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(create: (context) => TasksBloc()),
-        BlocProvider(create: (context) => SwitchBloc())
+        BlocProvider<TasksBloc>(create: (context) => TasksBloc()),
+        BlocProvider<SwitchBloc>(create: (context) => SwitchBloc())
       ],
       child: BlocBuilder<SwitchBloc, SwitchState>(
         builder: (context, state) {
